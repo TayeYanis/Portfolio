@@ -1,0 +1,112 @@
+@import 'mixins';
+
+$titre: "h1";
+$text: "h2";
+$text2: "h3";
+$text3: "p";
+$text4: "h5";
+
+%bold {
+    font-family: 'Open Sans';
+    font-weight: bold;
+}
+
+%semibold {
+  font-family: 'Open Sans';
+  font-weight: 600;
+}
+
+%light {
+    font-family: 'Open Sans';
+    font-weight: 300;
+}
+
+%opensans {
+    font-family: 'Open Sans';
+}
+
+$blanc: #ffffff;
+$gris: #ebebeb;
+$orange: #ed4f2e;
+$noir: #000000;
+$bleu-foncer: #1f2c33;
+$blanc-gris: #a3b1bf;
+$gris-foncer: #404b51;
+  
+body {
+    @if ($titre == "h1") {
+        h1 {
+            font-size: 50px;
+            color: $blanc;
+            font-family: 'Myriad Pro', sans-serif;
+        }
+    }
+    @if ($text == "h2") {
+        h2 {
+            font-size: 35px;
+            color: #ed4f2e;
+            text-transform: uppercase;
+            text-align: center;
+            @extend %semibold;
+        }
+    } @else {
+
+    }
+
+    @if ($text2 == "h3") {
+        h3 {
+            @include h3fontsize;
+        }
+    } @else {
+
+    }
+
+    @if ($text3 == "p") {
+        p {
+            @include pfontsize;
+            @extend %opensans;
+        }
+    } @else {
+
+    }
+
+    @if ($text4 == "h5") {
+        h5 {
+            @extend %bold;
+            text-transform: uppercase;
+            color: $blanc;
+            font-size: 20px;
+        }
+    } @else {
+
+    }
+}
+
+
+@media screen and (max-width: 430px) {
+    body { 
+        @if ($titre == "h1") {
+            h1 {
+                font-size: 25px;
+                color: $blanc;
+                font-family: 'Myriad Pro', sans-serif;
+            }
+        }
+
+        @if ($text2 == "h3") {
+            h3 {
+                @include h3Respfontsize;
+            }
+        } @else {
+    
+        }
+
+        @if ($text4 == "h5") {
+            h5 {
+                font-size: 10px;
+            }
+        } @else {
+    
+        }
+    }
+}

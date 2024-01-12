@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Mon Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="...">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Mon Portfolio</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#about">À propos</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#skills">Compétences</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#production">Production</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#project">Projet</a>
+                        </li>
+                    </ul>
+                    <div class="form-check form-switch" style="display: none;">
+                        <input class="form-check-input" type="checkbox" id="darkModeToggle">
+                        <label class="form-check-label" for="darkModeToggle">Mode sombre</label>
+                    </div>
+                    <button class="btn btn-light" id="zoomButton" onclick="toggleZoom()">🔍</button>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+
+    <section id="home" class="py-5 text-center">
+        <div class="container">
+            <h1>Bonjour et bienvenue sur mon portfolio</h1>
+            <h2 id="presentation">Je suis <strong>Yanis Taye</strong> et je suis Développeur Back-End</h2>
+            <div class="social-icons">
+                <a href="https://github.com/TayeYanis"><img src="img/GitHub.png" alt="Logo-GitHub" class="logo-image" id="GitHubImage"></a>
+                <img src="img/Profil.jpg" alt="Image de profil" class="profile-image" id="ProfileImage">
+                <a href="https://www.linkedin.com/in/yanis-taye/"><img src="img/Linkedin.png" alt="Logo-Linkedin" class="logo-image" id="LinkedinImage"></a>
+            </div>
+        </div>
+    </section>
+    
+    <section id="about" class="py-5 fade-in" style="margin-top: 15%;">
+        <div class="container">
+            <h2>À propos de moi</h2>
+            <div class="container about-container">
+                <div class="contact-info">
+                    <h3>Me contacter<svg xmlns="http://www.w3.org/2000/svg" height="16" width="16" viewBox="0 0 512 512"><path d="M48 64C21.5 64 0 85.5 0 112c0 15.1 7.1 29.3 19.2 38.4L236.8 313.6c11.4 8.5 27 8.5 38.4 0L492.8 150.4c12.1-9.1 19.2-23.3 19.2-38.4c0-26.5-21.5-48-48-48H48zM0 176V384c0 35.3 28.7 64 64 64H448c35.3 0 64-28.7 64-64V176L294.4 339.2c-22.8 17.1-54 17.1-76.8 0L0 176z"/></svg></h3>
+                    <h4>N'hésitez pas à me contacter par <br>e-mail : <a href="mailto:yanis.taye.2001@gmail.com">yanis.taye.2001@gmail.com</a></h4>
+                    <h4><a href="CV_Taye_Yanis.pdf" download="CV_Taye_Yanis.pdf" title="">Mon CV</a></h4>
+                </div>
+                <div class="presentation">
+                    <h4>Je suis actuellement étudiant à l'IUT de Troyes en deuxième année de BUT Métiers du Multimédia et de l'Internet. Je suis passionné par l'informatique, le développement web et les fonctionnalités. Dans le cadre de la poursuite de ma formation, je suis à la recherche d'un stage de 10 semaines, prévu de mi-avril à fin juin 2024. Je suis impliqué et motivé dans ce que je fais. Je suis rigoureux et possède un esprit d’analyse critique.</h4>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2>Mes Compétences</h1>
+            <div class="container about-container">
+            <div class="skills-section">
+                <div class="element">
+                    <h3>Front-end</h3>
+                    <div class="element-img">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="50" width="50" viewBox="0 0 384 512">
+                            <path fill="#fd811c" d="M0 32l34.9 395.8L191.5 480l157.6-52.2L384 32H0zm308.2 127.9H124.4l4.1 49.4h175.6l-13.6 148.4-97.9 27v.3h-1.1l-98.7-27.3-6-75.8h47.7L138 320l53.5 14.5 53.7-14.5 6-62.2H84.3L71.5 112.2h241.1l-4.4 47.7z"></path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="50" width="50" viewBox="0 0 384 512">
+                            <path fill="#2664cf" d="M0 32l34.9 395.8L192 480l157.1-52.2L384 32H0zm313.1 80l-4.8 47.3L193 208.6l-.3 .1h111.5l-12.8 146.6-98.2 28.7-98.8-29.2-6.4-73.9h48.9l3.2 38.3 52.6 13.3 54.7-15.4 3.7-61.6-166.3-.5v-.1l-.2 .1-3.6-46.3L193.1 162l6.5-2.7H76.7L70.9 112h242.2z"></path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="50" width="50" viewBox="0 0 640 512">
+                            <path d="M301.8 378.9c-.3 .6-.6 1.1 0 0zm249.1-87a131.2 131.2 0 0 0 -58 13.5c-5.9-11.9-12-22.3-13-30.1-1.2-9.1-2.5-14.5-1.1-25.3s7.7-26.1 7.6-27.2-1.4-6.6-14.3-6.7-24 2.5-25.3 5.9a122.8 122.8 0 0 0 -5.3 19.1c-2.3 11.7-25.8 53.5-39.1 75.3-4.4-8.5-8.1-16-8.9-22-1.2-9.1-2.5-14.5-1.1-25.3s7.7-26.1 7.6-27.2-1.4-6.6-14.3-6.7-24 2.5-25.3 5.9-2.7 11.4-5.3 19.1-33.9 77.3-42.1 95.4c-4.2 9.2-7.8 16.6-10.4 21.6-.4 .8-.7 1.3-.9 1.7 .3-.5 .5-1 .5-.8-2.2 4.3-3.5 6.7-3.5 6.7v.1c-1.7 3.2-3.6 6.1-4.5 6.1-.6 0-1.9-8.4 .3-19.9 4.7-24.2 15.8-61.8 15.7-63.1-.1-.7 2.1-7.2-7.3-10.7-9.1-3.3-12.4 2.2-13.2 2.2s-1.4 2-1.4 2 10.1-42.4-19.4-42.4c-18.4 0-44 20.2-56.6 38.5-7.9 4.3-25 13.6-43 23.5-6.9 3.8-14 7.7-20.7 11.4-.5-.5-.9-1-1.4-1.5-35.8-38.2-101.9-65.2-99.1-116.5 1-18.7 7.5-67.8 127.1-127.4 98-48.8 176.4-35.4 189.8-5.6 19.4 42.5-41.9 121.6-143.7 133-38.8 4.3-59.2-10.7-64.3-16.3-5.3-5.9-6.1-6.2-8.1-5.1-3.3 1.8-1.2 7 0 10.1 3 7.9 15.5 21.9 36.8 28.9 18.7 6.1 64.2 9.5 119.2-11.8 61.8-23.8 109.9-90.1 95.8-145.6C386.5 18.3 293-.2 204.6 31.2c-52.7 18.7-109.7 48.1-150.7 86.4-48.7 45.6-56.5 85.3-53.3 101.9 11.4 58.9 92.6 97.3 125.1 125.7-1.6 .9-3.1 1.7-4.5 2.5-16.3 8.1-78.2 40.5-93.7 74.7-17.5 38.8 2.9 66.6 16.3 70.4 41.8 11.6 84.6-9.3 107.6-43.6s20.2-79.1 9.6-99.5c-.1-.3-.3-.5-.4-.8 4.2-2.5 8.5-5 12.8-7.5 8.3-4.9 16.4-9.4 23.5-13.3-4 10.8-6.9 23.8-8.4 42.6-1.8 22 7.3 50.5 19.1 61.7 5.2 4.9 11.5 5 15.4 5 13.8 0 20-11.4 26.9-25 8.5-16.6 16-35.9 16-35.9s-9.4 52.2 16.3 52.2c9.4 0 18.8-12.1 23-18.3v.1s.2-.4 .7-1.2c1-1.5 1.5-2.4 1.5-2.4v-.3c3.8-6.5 12.1-21.4 24.6-46 16.2-31.8 31.7-71.5 31.7-71.5a201.2 201.2 0 0 0 6.2 25.8c2.8 9.5 8.7 19.9 13.4 30-3.8 5.2-6.1 8.2-6.1 8.2a.3 .3 0 0 0 .1 .2c-3 4-6.4 8.3-9.9 12.5-12.8 15.2-28 32.6-30 37.6-2.4 5.9-1.8 10.3 2.8 13.7 3.4 2.6 9.4 3 15.7 2.5 11.5-.8 19.6-3.6 23.5-5.4a82.2 82.2 0 0 0 20.2-10.6c12.5-9.2 20.1-22.4 19.4-39.8-.4-9.6-3.5-19.2-7.3-28.2 1.1-1.6 2.3-3.3 3.4-5C434.8 301.7 450.1 270 450.1 270a201.2 201.2 0 0 0 6.2 25.8c2.4 8.1 7.1 17 11.4 25.7-18.6 15.1-30.1 32.6-34.1 44.1-7.4 21.3-1.6 30.9 9.3 33.1 4.9 1 11.9-1.3 17.1-3.5a79.5 79.5 0 0 0 21.6-11.1c12.5-9.2 24.6-22.1 23.8-39.6-.3-7.9-2.5-15.8-5.4-23.4 15.7-6.6 36.1-10.2 62.1-7.2 55.7 6.5 66.6 41.3 64.5 55.8s-13.8 22.6-17.7 25-5.1 3.3-4.8 5.1c.5 2.6 2.3 2.5 5.6 1.9 4.6-.8 29.2-11.8 30.3-38.7 1.6-34-31.1-71.4-89-71.1zm-429.2 144.7c-18.4 20.1-44.2 27.7-55.3 21.3C54.6 451 59.3 421.4 82 400c13.8-13 31.6-25 43.4-32.4 2.7-1.6 6.6-4 11.4-6.9 .8-.5 1.2-.7 1.2-.7 .9-.6 1.9-1.1 2.9-1.7 8.3 30.4 .3 57.2-19.1 78.3zm134.4-91.4c-6.4 15.7-19.9 55.7-28.1 53.6-7-1.8-11.3-32.3-1.4-62.3 5-15.1 15.6-33.1 21.9-40.1 10.1-11.3 21.2-14.9 23.8-10.4 3.5 5.9-12.2 49.4-16.2 59.2zm111 53c-2.7 1.4-5.2 2.3-6.4 1.6-.9-.5 1.1-2.4 1.1-2.4s13.9-14.9 19.4-21.7c3.2-4 6.9-8.7 10.9-13.9 0 .5 .1 1 .1 1.6-.1 17.9-17.3 30-25.1 34.8zm85.6-19.5c-2-1.4-1.7-6.1 5-20.7 2.6-5.7 8.6-15.3 19-24.5a36.2 36.2 0 0 1 1.9 10.8c-.1 22.5-16.2 30.9-25.9 34.4z"></path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="50" width="50" viewBox="0 0 448 512">
+                            <path d="M0 32v448h448V32H0zm243.8 349.4c0 43.6-25.6 63.5-62.9 63.5-33.7 0-53.2-17.4-63.2-38.5l34.3-20.7c6.6 11.7 12.6 21.6 27.1 21.6 13.8 0 22.6-5.4 22.6-26.5V237.7h42.1v143.7zm99.6 63.5c-39.1 0-64.4-18.6-76.7-43l34.3-19.8c9 14.7 20.8 25.6 41.5 25.6 17.4 0 28.6-8.7 28.6-20.8 0-14.4-11.4-19.5-30.7-28l-10.5-4.5c-30.4-12.9-50.5-29.2-50.5-63.5 0-31.6 24.1-55.6 61.6-55.6 26.8 0 46 9.3 59.8 33.7L368 290c-7.2-12.9-15-18-27.1-18-12.3 0-20.1 7.8-20.1 18 0 12.6 7.8 17.7 25.9 25.6l10.5 4.5c35.8 15.3 55.9 31 55.9 66.2 0 37.8-29.8 58.6-69.7 58.6z"></path>
+                        </svg>
+                    </div>
+                </div>
+                <div class="element">
+                    <h3>Back-end</h3>
+                    <div class="element-img">
+                        <svg xmlns="http://www.w3.org/2000/svg" height="50" width="50" viewBox="0 0 640 512">
+                            <path d="M320 104.5c171.4 0 303.2 72.2 303.2 151.5S491.3 407.5 320 407.5c-171.4 0-303.2-72.2-303.2-151.5S148.7 104.5 320 104.5m0-16.8C143.3 87.7 0 163 0 256s143.3 168.3 320 168.3S640 349 640 256 496.7 87.7 320 87.7zM218.2 242.5c-7.9 40.5-35.8 36.3-70.1 36.3l13.7-70.6c38 0 63.8-4.1 56.4 34.3zM97.4 350.3h36.7l8.7-44.8c41.1 0 66.6 3 90.2-19.1 26.1-24 32.9-66.7 14.3-88.1-9.7-11.2-25.3-16.7-46.5-16.7h-70.7L97.4 350.3zm185.7-213.6h36.5l-8.7 44.8c31.5 0 60.7-2.3 74.8 10.7 14.8 13.6 7.7 31-8.3 113.1h-37c15.4-79.4 18.3-86 12.7-92-5.4-5.8-17.7-4.6-47.4-4.6l-18.8 96.6h-36.5l32.7-168.6zM505 242.5c-8 41.1-36.7 36.3-70.1 36.3l13.7-70.6c38.2 0 63.8-4.1 56.4 34.3zM384.2 350.3H421l8.7-44.8c43.2 0 67.1 2.5 90.2-19.1 26.1-24 32.9-66.7 14.3-88.1-9.7-11.2-25.3-16.7-46.5-16.7H417l-32.8 168.7z"></path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="50" width="50" viewBox="0 0 448 512">
+                            <path d="M448 80v48c0 44.2-100.3 80-224 80S0 172.2 0 128V80C0 35.8 100.3 0 224 0S448 35.8 448 80zM393.2 214.7c20.8-7.4 39.9-16.9 54.8-28.6V288c0 44.2-100.3 80-224 80S0 332.2 0 288V186.1c14.9 11.8 34 21.2 54.8 28.6C99.7 230.7 159.5 240 224 240s124.3-9.3 169.2-25.3zM0 346.1c14.9 11.8 34 21.2 54.8 28.6C99.7 390.7 159.5 400 224 400s124.3-9.3 169.2-25.3c20.8-7.4 39.9-16.9 54.8-28.6V432c0 44.2-100.3 80-224 80S0 476.2 0 432V346.1z"></path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="50" width="50" viewBox="0 0 640 512">
+                            <path d="M349.9 236.3h-66.1v-59.4h66.1v59.4zm0-204.3h-66.1v60.7h66.1V32zm78.2 144.8H362v59.4h66.1v-59.4zm-156.3-72.1h-66.1v60.1h66.1v-60.1zm78.1 0h-66.1v60.1h66.1v-60.1zm276.8 100c-14.4-9.7-47.6-13.2-73.1-8.4-3.3-24-16.7-44.9-41.1-63.7l-14-9.3-9.3 14c-18.4 27.8-23.4 73.6-3.7 103.8-8.7 4.7-25.8 11.1-48.4 10.7H2.4c-8.7 50.8 5.8 116.8 44 162.1 37.1 43.9 92.7 66.2 165.4 66.2 157.4 0 273.9-72.5 328.4-204.2 21.4 .4 67.6 .1 91.3-45.2 1.5-2.5 6.6-13.2 8.5-17.1l-13.3-8.9zm-511.1-27.9h-66v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1v-59.4zm78.1 0h-66.1v59.4h66.1v-59.4zm-78.1-72.1h-66.1v60.1h66.1v-60.1z"></path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="50" width="50" viewBox="0 0 576 512">
+                            <path d="M469.2 75A75.6 75.6 0 1 0 317.9 75a75.6 75.6 0 1 0 151.2 0zM154.2 240.7A75.6 75.6 0 1 0 3 240.7a75.6 75.6 0 1 0 151.2 0zM57 346C75.6 392.9 108 433 150 461.1s91.5 42.6 142 41.7c-14.7-18.6-22.9-41.5-23.2-65.2c-6.8-.9-13.3-2.1-19.5-3.4c-26.8-5.7-51.9-17.3-73.6-34s-39.3-38.1-51.7-62.5c-20.9 9.9-44.5 12.8-67.1 8.2zm395.1 89.8a75.6 75.6 0 1 0 -151.2 0 75.6 75.6 0 1 0 151.2 0zM444 351.6c18.5 14.8 31.6 35.2 37.2 58.2c33.3-41.3 52.6-92.2 54.8-145.2s-12.5-105.4-42.2-149.4c-8.6 21.5-24 39.6-43.8 51.6c15.4 28.6 22.9 60.8 21.9 93.2s-10.7 64-28 91.6zM101.1 135.4c12.4 2.7 24.3 7.5 35.1 14.3c16.6-24.2 38.9-44.1 64.8-58S255.8 70.4 285.2 70c.2-5.9 .9-11.9 2-17.7c3.6-16.7 11.1-32.3 21.8-45.5c-47.7-3.8-95.4 6-137.6 28.5S94.3 91.7 70.8 133.4c2.7-.2 5.3-.3 8-.3c7.5 0 15 .8 22.4 2.3z"></path>
+                        </svg>
+                        <svg xmlns="http://www.w3.org/2000/svg" height="50" width="50" viewBox="0 0 512 512">
+                            <path d="M61.7 169.4l101.5 278C92.2 413 43.3 340.2 43.3 256c0-30.9 6.6-60.1 18.4-86.6zm337.9 75.9c0-26.3-9.4-44.5-17.5-58.7-10.8-17.5-20.9-32.4-20.9-49.9 0-19.6 14.8-37.8 35.7-37.8 .9 0 1.8 .1 2.8 .2-37.9-34.7-88.3-55.9-143.7-55.9-74.3 0-139.7 38.1-177.8 95.9 5 .2 9.7 .3 13.7 .3 22.2 0 56.7-2.7 56.7-2.7 11.5-.7 12.8 16.2 1.4 17.5 0 0-11.5 1.3-24.3 2l77.5 230.4L249.8 247l-33.1-90.8c-11.5-.7-22.3-2-22.3-2-11.5-.7-10.1-18.2 1.3-17.5 0 0 35.1 2.7 56 2.7 22.2 0 56.7-2.7 56.7-2.7 11.5-.7 12.8 16.2 1.4 17.5 0 0-11.5 1.3-24.3 2l76.9 228.7 21.2-70.9c9-29.4 16-50.5 16-68.7zm-139.9 29.3l-63.8 185.5c19.1 5.6 39.2 8.7 60.1 8.7 24.8 0 48.5-4.3 70.6-12.1-.6-.9-1.1-1.9-1.5-2.9l-65.4-179.2zm183-120.7c.9 6.8 1.4 14 1.4 21.9 0 21.6-4 45.8-16.2 76.2l-65 187.9C426.2 403 468.7 334.5 468.7 256c0-37-9.4-71.8-26-102.1zM504 256c0 136.8-111.3 248-248 248C119.2 504 8 392.7 8 256 8 119.2 119.2 8 256 8c136.7 0 248 111.2 248 248zm-11.4 0c0-130.5-106.2-236.6-236.6-236.6C125.5 19.4 19.4 125.5 19.4 256S125.6 492.6 256 492.6c130.5 0 236.6-106.1 236.6-236.6z"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+  
+    <section id="production" class="py-5">
+        <div class="container">
+            <h2>Mes Réalisations</h2>
+            <div class="container about-container">
+                <div class="slider-container">
+                    <div class="slider">
+                        <div class="slide1">
+                            <h3>Développement front-end</h3>
+                            <div class="competence">
+                                <a href="https://mmi22g09.sae202.ovh/" title="">HTML/CSS
+                                    <img src="img/DÉVELOPPEMENT-FRONT-END/Competence1.png" alt="Image Competence 1" />
+                                    <button>Voir le site</button>
+                                </a>
+                                <a href="http://mmi22g09.mmi-troyes.fr/portfolio/Projet/SCSS/index.html" title="">SCSS
+                                    <img src="img/DÉVELOPPEMENT-FRONT-END/Competence2.png" alt="Image Competence 2" />
+                                    <button>Voir le site</button>
+                                </a>
+                                <a href="http://mmi22g09.mmi-troyes.fr/portfolio/Projet/BOOTSTRAP/index.html" title="">BOOTSTRAP
+                                    <img src="img/DÉVELOPPEMENT-FRONT-END/Competence3.png" alt="Image Competence 3" />
+                                    <button>Voir le site</button>
+                                </a>
+                            </div>      
+                        </div>
+                        <div class="slide2">
+                            <h3>Développement back-end</h3>
+                            <div class="competence">
+                                <a href="https://mmi22g09.sae202.ovh/" title="">PHP
+                                    <img src="img/DÉVELOPPEMENT-BACK-END/Competence1.png" alt="Image Competence 1" />
+                                    <button>Voir le site</button>
+                                </a>
+                                <a href="https://github.com/TayeYanis/POO.git" title="">POO
+                                    <img src="img/DÉVELOPPEMENT-BACK-END/Competence2.png" alt="Image Competence 2" />
+                                    <button>Voir le site</button>
+                                </a>
+                                <a href="https://github.com/TayeYanis/sae301" title="">SYMPHONY
+                                    <img src="img/DÉVELOPPEMENT-BACK-END/Competence3.png" alt="Image Competence 3" />
+                                    <button>Voir le site</button>
+                                </a>
+                            </div>      
+                        </div>
+                        <div class="slide3">
+                            <h3>Création numérique</h3>
+                            <div class="competence">
+                                <a href="Projet/ILLUSTRATOR/ILLUSTRATOR.pdf" download="ILLUSTRATOR.pdf" title="">ILLUSTRATOR
+                                    <img src="img/CRÉATION-NUMÉRIQUE/Competence1.png" alt="Image Competence 1" />
+                                    <button>Voir le projet</button>
+                                </a>
+                                <a href="Projet/PHOTOSHOP/PHOTOSHOP.pdf" download="PHOTOSHOP.pdf" title="">PHOTOSHOP
+                                    <img src="img/CRÉATION-NUMÉRIQUE/Competence2.png" alt="Image Competence 2" />
+                                    <button>Voir le projet</button>
+                                </a>
+                                <a href="https://github.com/TayeYanis/VueJS" title="">FIGMA
+                                    <img src="img/CRÉATION-NUMÉRIQUE/Competence3.png" alt="Image Competence 3" />
+                                    <button>Voir le projet</button>
+                                </a>
+                            </div>      
+                        </div>
+                    </div>
+                    <div class="navigation">
+                        <div class="nav-navigation active" onclick="jumpToSlide(0)"></div>
+                        <div class="nav-navigation" onclick="jumpToSlide(1)"></div>
+                        <div class="nav-navigation" onclick="jumpToSlide(2)"></div>
+                    </div>
+                </div>
+                <button class="prev" onclick="changeSlide(-1)"><i class="fas fa-chevron-left"></i></button>
+                <button class="next" onclick="changeSlide(1)"><i class="fas fa-chevron-right"></i></button>        
+            </div>    
+        </div>
+    </section>
+
+
+    <section id="project" class="py-5 fade-in" style="margin-top: 15%;">
+        <div class="container">
+            <h2>Mon projet</h2>
+            <div class="container about-container">
+                <div class="project-contenue">
+                    <h4>J'ai entrepris un projet visant à acquérir quelques bases et notion de Vue.js. Mon objectif était de maîtriser ces quelques concepts de ce framework JavaScript.<br>
+                        Le projet repose sur le concept de réactivité de Vue.js à travers ces boutons d'incrémentation et de décrémentation. Ensuite, j'ai développé une calculatrice simple avec des fonctionnalités d'addition, de soustraction, de multiplication et de division ainsi qu'un message d'alerte en cas de division par zéro. Une fonctionnalité amusante afin de pouvoir ajuster la taille de la police d'un texte. J'ai mit en avant des données réactives avec des concepts de base tels que ref afin de créer des références réactives.<br>
+                        Voici un aperçu des fonctionnalités que j'ai appris à maitriser :
+                    </h4>
+                    <iframe src="demo-projet-vuejs.mp4" width="600" height="200"></iframe>
+                    <h5>Vous trouverez mon projet <a href="https://github.com/TayeYanis/VueJS.git" title="">ici</a></h5>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+
+      
+
+    
+    <footer class="py-4 text-center">
+        <div class="container">
+            <p>&copy; 2024 Taye Yanis.</p>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
+    <script src="js/script.js" defer></script>
+    <script src="js/slider.js" defer></script>
+
+
+</body>
+</html>
